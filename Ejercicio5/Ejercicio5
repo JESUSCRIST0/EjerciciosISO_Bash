@@ -1,0 +1,23 @@
+#/bin/bash
+
+#Haz un script que saque los números del 1 al 10 y 
+#diga si son impares o pares. "1 es impar, 2 es par, etc..."
+
+
+num=1
+
+
+while [[ $num -le 10 ]]; do
+
+modulo=$((num % 2))
+
+
+    if [ $modulo -eq 0 ]; then
+            echo "$num es par"
+    else
+            echo "$num es impar"
+    fi
+
+    let "num = num + 1"
+
+done

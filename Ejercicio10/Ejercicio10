@@ -1,0 +1,11 @@
+#/bin/bash
+
+#Script que pida dos números al usuario (a y b). 
+#El script calculará y mostrará el resultado de las siguientes operaciones:
+
+#a + b
+#a - b
+#a x b
+#a entre b
+#residuo de dividir a entre b  %
+#(a - b)²

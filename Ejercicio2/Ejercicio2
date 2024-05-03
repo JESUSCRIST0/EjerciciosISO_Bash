@@ -1,0 +1,13 @@
+#/bin/bash
+#Haz un script que verifique que al menos hemos introducido un parámetro y si no,
+#nos muestre un mensaje por pantalla: “Hay que introducir al menos un parámetro”
+
+if [[ $# -ge 1 ]]; then
+
+    echo Correcto
+
+else
+
+    echo Hay que introducir al menos un parámetro
+
+fi

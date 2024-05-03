@@ -1,0 +1,12 @@
+#/bin/bash
+#Haz un script que, pasados ​​dos números como parámetros,
+#saque el mayor de los dos.
+
+a=$1
+b=$2
+
+if [[ $a -gt $b ]]; then
+    echo $a es mayor que $b
+else
+    echo $b es mayor que $a
+fi

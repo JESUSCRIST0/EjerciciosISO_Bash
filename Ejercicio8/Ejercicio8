@@ -1,0 +1,25 @@
+#/bin/bash
+
+#Haz un script que, si le pasamos menos de 5 parámetros diga 
+#«Faltan parámetros», si le pasamos más de 5 diga «Sobran parámetros» y, 
+#si le pasamos 5, escriba, para cada uno de ellos 
+#« El parámetro num_param es param», 
+#donde num_param es el número del parámetro (param) correspondiente.
+#!/bin/bash
+
+num=$#
+
+if [[ $num -eq 5 ]]; then
+    i=1
+    while [[ $i -le $num ]]; do
+        echo "El parámetro $i es ${!i}"
+        ((i++))
+    done
+
+elif [[ $num -lt 5 ]]; then
+    echo "Faltan parámetros"
+
+else
+    echo "Sobran parámetros"
+
+fi

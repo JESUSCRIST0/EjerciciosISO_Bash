@@ -1,0 +1,11 @@
+#/bin/bash
+
+#Haz un script que diga si el directorio pasado por parámetro existe.
+
+a=$1
+
+if [[ -d $a ]]; then    
+    echo El directorio existe.
+else    
+    echo El directorio no existe
+fi

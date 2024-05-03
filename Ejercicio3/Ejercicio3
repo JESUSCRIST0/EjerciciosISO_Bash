@@ -1,0 +1,18 @@
+#/bin/bash
+
+ #Haz un script que reciba dos números como argumentos y saque su suma, 
+ #su resta, su producto, el residuo de dividir el primero entre el segundo (operación módulo).
+ 
+
+a=$1
+b=$2
+
+suma=$((a + b))
+resta=$((a - b))
+producto=$((a * b))
+modulo=$((a % b))
+
+echo "La suma de $a y $b es $suma"
+echo "La resta de $a y $b es $resta"
+echo "El producto de $a y $b es $producto"
+echo "El resto de $a entre $b es $modulo"

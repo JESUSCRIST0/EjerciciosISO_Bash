@@ -1,0 +1,8 @@
+#/bin/bash
+
+#Haz un script que muestre por pantalla cuántos parámetros 
+#se le han pasado y qué valor tienen el primer y segundo parámetro.
+
+echo "Número de parámetros: $#"
+echo "Primer parámetro: $1"
+echo "Segundo parámetro: $2"

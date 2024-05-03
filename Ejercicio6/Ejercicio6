@@ -1,0 +1,11 @@
+#/bin/bash
+
+#Haz un script que muestre por pantalla los 50 primeros números pares.
+
+
+i=0
+
+while [[ $i -le 100 ]]; do
+    echo $i
+    let " i = i + 2"
+done
