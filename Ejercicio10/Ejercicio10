@@ -9,3 +9,23 @@
 #a entre b
 #residuo de dividir a entre b  %
 #(a - b)²
+
+
+echo "Ingresa el primer número (a): "
+read a
+echo "Ingresa el segundo número (b): "
+read b
+
+sum=$((a + b))
+Resta=$((a - b))
+producto=$((a * b))
+division=$(($a / $b))
+residuo=$((a % b))
+productonotable=$(( (a - b) * (a - b) ))
+
+echo "La suma de a y b es: $sum"
+echo "La resta de a y b es: $Resta"
+echo "El producto de a y b es: $producto"
+echo "La división de a entre b es: $division"
+echo "El residuo de dividir a entre b es: $residuo"
+echo "El cuadrado de la diferencia entre a y b es: $productonotable"
